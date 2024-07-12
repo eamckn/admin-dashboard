@@ -134,14 +134,16 @@ input[type="text"] {
     background-color: grey;
     display: grid;
     grid-template-columns: 5fr 2fr;
+    padding-right: 15px;
+    padding-bottom: 30px;
+    padding-left: 15px;
+    gap: 15px;
 }
 
 .main-wrapper .project-wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr repeat(3, 5fr);
-    padding-bottom: 30px;
-    padding-left: 15px;
+    grid-template-rows: 1fr repeat(3, 4fr);
     gap: 15px;
 }
 
@@ -158,10 +160,41 @@ input[type="text"] {
     place-self: center;
 }
 
-.main-wrapper .announcement-wrapper {
+.main-wrapper .main-wrapper-side {
+    grid-column: 2;
     display: grid;
     grid-template-columns: 1;
-    grid-template-rows: 1fr repeat(2, 6fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.main-wrapper .main-wrapper-side .announcement-wrapper,
+.main-wrapper .main-wrapper-side .trending-wrapper {
+    display: grid;
+    grid-template-rows: 1fr 6fr;
+}
+
+.main-wrapper .main-wrapper-side .announcement-wrapper {
+    grid-row: 1;
+    gap: 15px;
+}
+
+.main-wrapper .main-wrapper-side .trending-wrapper {
+    grid-row: 2;
+    gap: 15px;
+}
+
+.announcement-wrapper h2,
+.trending-wrapper h2 {
+    grid-row: 1;
+    align-self: end;
+}
+
+.announcement-wrapper .announcement-card,
+.trending-wrapper .trending-card {
+    grid-row: 2;
+    height: 100%;
+    width: 100%;
+    background-color: white;
 }
 
 ul li {
