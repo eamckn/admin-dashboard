@@ -32,6 +32,9 @@ body, html {
 .header-wrapper {
     grid-area: header;
     background-color: white;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 2fr 3fr
 }
 
 .sidebar-wrapper {
