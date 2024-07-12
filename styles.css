@@ -38,7 +38,7 @@ body, html {
 
 .header-wrapper {
     grid-area: header;
-    background-color: grey;
+    background-color: white;
 }
 
 .sidebar-wrapper {
@@ -48,4 +48,5 @@ body, html {
 
 .main-wrapper {
     grid-area: main;
+    background-color: grey;
 }
