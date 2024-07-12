@@ -90,15 +90,18 @@ input[type="text"] {
 }
 
 .user-notifications .notification-icon {
+    grid-column: 1;
     justify-self: end;
     margin-right: 1rem;
 }
 
 .user-notifications .user-profile-pic {
+    grid-column: 2;
     justify-self: center;
 }
 
 .user-notifications .user-name {
+    grid-column: 3;
     padding-left: 2rem;
 }
 
@@ -131,6 +134,12 @@ input[type="text"] {
     background-color: grey;
     display: grid;
     grid-template-columns: 3fr 1fr;
+}
+
+.main-wrapper .project-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr repeat(3, 5fr);
 }
 
 ul li {
