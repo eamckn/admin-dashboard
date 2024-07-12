@@ -9,9 +9,10 @@
 
 :root {
     --card-border-radius: 8px;
-    --card-left-border-clr: gold;
+    --card-left-border-color: gold;
     --card-box-shadow: 4px 4px 10px 2px black;
     --main-content-color: rgb(198, 198, 198);
+    --sidebar-color: rgb(54, 165, 239);
 }
 
 body, html {
@@ -128,13 +129,16 @@ input[type="text"] {
 
 .header-wrapper button {
     height: 40%;
-    width: 60%;
+    width: 70%;
     border-radius: 36px;
+    background-color: var(--sidebar-color);
+    color: white;
+    border: none;
 }
 
 .sidebar-wrapper {
     grid-area: sidebar;
-    background-color: lightskyblue;
+    background-color: var(--sidebar-color);
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 3fr 6fr;
@@ -169,7 +173,7 @@ input[type="text"] {
     width: 100%;
     background-color: white;
     place-self: center;
-    border-left: 8px solid var(--card-left-border-clr);
+    border-left: 8px solid var(--card-left-border-color);
     border-radius: var(--card-border-radius);
     box-shadow: var(--card-box-shadow);
 }
