@@ -56,6 +56,21 @@ input[type="text"] {
     grid-template-rows: 1fr 2fr;
 }
 
+.button-wrapper {
+    grid-column: 2;
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10px;
+    place-items: center;
+}
+
+.header-wrapper button {
+    height: 40%;
+    width: 60%;
+    border-radius: 36px;
+}
+
 .sidebar-wrapper {
     grid-area: sidebar;
     background-color: lightskyblue;
