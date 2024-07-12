@@ -60,6 +60,8 @@ input[type="text"] {
 .main-wrapper {
     grid-area: main;
     background-color: grey;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
 }
 
 ul li {
