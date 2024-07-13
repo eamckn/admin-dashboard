@@ -12,8 +12,8 @@
     --card-border-radius: 8px;
     --card-left-border-color: gold;
     --card-box-shadow: 4px 4px 10px 2px black;
-    --main-content-color: rgb(198, 198, 198);
-    --sidebar-color: rgb(54, 165, 239);
+    --main-content-color: #e0e7ff;
+    --sidebar-color: #6366f1;
 }
 
 body, html {
