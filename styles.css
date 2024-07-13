@@ -71,12 +71,23 @@ input[type="text"] {
     grid-row: 2;
     display: grid;
     grid-template-columns: 1fr 3fr;
-    grid-template-rows: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
 }
 
 .user-info .user-profile-pic {
     grid-column: 1;
     grid-row: 1 / 3;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.user-info .user-profile-pic .profile-pic-wrapper {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    margin-right: 20px;
+    background-color: grey;
 }
 
 .user-info .greeting,
@@ -88,6 +99,7 @@ input[type="text"] {
     grid-column: 2;
     grid-row: 1;
     align-self: end;
+    padding-bottom: 6px;
 }
 
 .user-info .user-name-handle {
