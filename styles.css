@@ -47,16 +47,28 @@ body, html {
 }
 
 .search-bar {
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    place-items: center;
+}
+
+.search-bar .search-icon {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: end;
+}
+
+.search-bar .search-icon img {
+    width: 40%;
 }
 
 input[type="text"] {
     height: 1.5rem;
-    width: 80%;
+    width: 90%;
     border-radius: 10px;
+    margin-left: 15px;
     background-color: var(--main-content-color);
+    justify-self: start;
+    border: 0;
 }
 
 .user-notifications {
@@ -87,7 +99,7 @@ input[type="text"] {
     width: 70px;
     border-radius: 50%;
     margin-right: 20px;
-    background-color: grey;
+    background: gray;
 }
 
 .user-info .greeting,
@@ -185,6 +197,12 @@ input[type="text"] {
 .sidebar-wrapper .main-nav .main-nav-options,
 .sidebar-wrapper .settings-nav .settings-nav-options {
     padding-left: 20px;
+}
+
+.sidebar-wrapper .main-nav img,
+.sidebar-wrapper .settings-nav img {
+    color: white;
+    width: 20%;
 }
 
 .main-wrapper {
