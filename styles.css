@@ -113,6 +113,7 @@ input[type="text"] {
     grid-column: 2;
     grid-row: 2;
     font-size: 1.5rem;
+    font-weight: bold;
     align-self: start;
 }
 
@@ -143,7 +144,9 @@ input[type="text"] {
 
 .user-notifications .user-name {
     grid-column: 3;
-    padding-left: 2rem;
+    align-self: center;
+    font-size: 1.15rem;
+    font-weight: bold;
 }
 
 .button-wrapper {
