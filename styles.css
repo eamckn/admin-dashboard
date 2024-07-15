@@ -177,14 +177,16 @@ input[type="text"] {
     grid-template-columns: 1fr 2fr;
 }
 
-.sidebar-wrapper .branding-icon {
-    grid-column: 1;
+.sidebar-wrapper img.dashboard {
+    align-self: center;
     justify-self: end;
+    margin-right: 20px;
+    width: 40%;
 }
 
-.sidebar-wrapper .branding-name {
-    grid-column: 2;
-    justify-self: center;
+.sidebar-wrapper p.dashboard {
+    align-self: center;
+    font-size: 1.5rem;
 }
 
 .sidebar-wrapper .main-nav {
