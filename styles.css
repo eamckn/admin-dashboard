@@ -43,7 +43,8 @@ body, html {
     background-color: white;
     display: grid;
     grid-template-columns: 3fr 2fr;
-    grid-template-rows: 2fr 3fr;
+    grid-template-rows: 3fr 4fr;
+    padding-right: 20px;
 }
 
 .search-bar {
@@ -119,20 +120,19 @@ input[type="text"] {
 
 .user-notifications {
     display: grid;
-    grid-template-columns: 2fr 2fr 3fr;
+    grid-template-columns: 3fr 2fr 4fr;
     align-items: center;
 }
 
 .user-notifications svg {
     grid-column: 1;
     justify-self: end;
-    margin-right: 1rem;
     width: 20%;
 }
 
 .user-notifications .profile-picture-wrapper {
+    justify-self: end;
     align-self: center;
-    justify-self: center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -144,6 +144,7 @@ input[type="text"] {
 
 .user-notifications .user-name {
     grid-column: 3;
+    justify-self: end;
     align-self: center;
     font-size: 1.15rem;
     font-weight: bold;
@@ -155,7 +156,8 @@ input[type="text"] {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 10px;
-    place-items: center;
+    justify-items: end;
+    align-items: center;
 }
 
 .header-wrapper button {
