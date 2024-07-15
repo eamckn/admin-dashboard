@@ -273,7 +273,7 @@ input[type="text"] {
 .main-wrapper .project-wrapper .project-card {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 3git fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
     height: 100%;
     width: 100%;
     background-color: white;
