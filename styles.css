@@ -278,9 +278,16 @@ input[type="text"] {
     width: 100%;
     background-color: white;
     place-self: center;
+    padding: 5px 20px;
     border-left: 8px solid var(--card-left-border-color);
     border-radius: var(--card-border-radius);
     box-shadow: var(--card-box-shadow);
+}
+
+.project-card .project-title {
+    align-self: end;
+    font-size: 1.15rem;
+    font-weight: bold;
 }
 
 .main-wrapper .main-wrapper-side {
