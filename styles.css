@@ -355,7 +355,7 @@ input[type="text"] {
 
 .announcement-wrapper .announcement-card div {
     width: 100%;
-    padding-top: 15px;
+    padding-top: 5px;
 }
 
 .announcement-wrapper .announcement-card div:nth-child(2),
