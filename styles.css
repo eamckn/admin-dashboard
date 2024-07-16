@@ -57,6 +57,7 @@ input[type="text"] {
     width: 90%;
     border-radius: 10px;
     margin-left: 15px;
+    padding: .25rem;
     background-color: var(--main-content-color);
     justify-self: start;
     border: 0;
