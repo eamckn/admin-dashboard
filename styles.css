@@ -290,6 +290,30 @@ input[type="text"] {
     font-weight: bold;
 }
 
+.project-card .project-icons {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr;
+    grid-template-areas: ". star eye share";
+}
+
+.project-card .project-icons svg {
+    width: 50%;
+    place-self: center;
+}
+
+.project-card .project-icons svg:nth-child(1) {
+    grid-area: star;
+}
+
+.project-card .project-icons svg:nth-child(2) {
+    grid-area: eye;
+}
+
+.project-card .project-icons svg:nth-child(3) {
+    grid-area: share;
+}
+
 .main-wrapper .main-wrapper-side {
     grid-column: 2;
     display: grid;
