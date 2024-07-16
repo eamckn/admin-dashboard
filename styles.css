@@ -32,12 +32,6 @@ body, html {
                          "sidebar main";
 }
 
-.header-wrapper,
-.sidebar-wrapper,
-.main-wrapper {
-    border: 1px solid black;
-}
-
 .header-wrapper {
     grid-area: header;
     background-color: white;
@@ -352,6 +346,32 @@ input[type="text"] {
     border-radius: var(--card-border-radius);
     box-shadow: var(--card-box-shadow);
 }
+
+.announcement-wrapper .announcement-card {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    padding: 5px 10px;
+}
+
+.announcement-wrapper .announcement-card div {
+    width: 100%;
+    padding-top: 15px;
+}
+
+.announcement-wrapper .announcement-card div:nth-child(2),
+.announcement-wrapper .announcement-card div:nth-child(3) {
+    border-top: 1px solid black;
+}
+
+.announcement-card .announcement-section .announcement-title {
+    font-weight: bold;
+}
+
+.announcement-card .announcement-section .announcement-content {
+    padding-top: 4px;
+    font-size: .75rem;
+}
+
 
 ul li {
     list-style-type: none;
