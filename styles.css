@@ -372,6 +372,22 @@ input[type="text"] {
     font-size: .75rem;
 }
 
+.trending-wrapper .trending-card {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 1fr;
+    place-items: center;
+    padding: 5px 10px;
+}
+
+.trending-wrapper .trending-card svg {
+    width: 80%;
+}
+
+.trending-wrapper .trending-card p.trending-comment {
+    font-size: .85rem;
+}
+
 ul li {
     list-style-type: none;
     line-height: 2rem;
